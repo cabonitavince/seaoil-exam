@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:seaoil_technical_exam/utilities/app_themes.dart';
 
 class Logo extends StatelessWidget {
-  const Logo({Key? key}) : super(key: key);
+  const Logo({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      width: 120,
-      height: 120,
+      width: 150,
+      height: 150,
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
