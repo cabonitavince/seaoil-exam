@@ -22,7 +22,7 @@ class LoginService {
           throw decodedBodyResponse["data"]["message"];
         }
       } else {
-        throw "Bad Request Status Code: ${response.statusCode}";
+        throw "Bad Request! Status Code: ${response.statusCode}";
       }
 
     } on Exception catch (e) {
