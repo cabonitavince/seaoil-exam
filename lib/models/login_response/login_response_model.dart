@@ -13,11 +13,11 @@ class LoginResponseModel {
   });
 
 
-  Data data;
+  LoginData data;
   String status;
 
   factory LoginResponseModel.fromJson(Map<String, dynamic> json) => LoginResponseModel(
-    data: Data.fromJson(json["data"]),
+    data: LoginData.fromJson(json["data"]),
     status: json["status"],
   );
 

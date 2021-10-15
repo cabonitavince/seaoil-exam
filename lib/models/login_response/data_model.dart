@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-Data dataFromJson(String str) => Data.fromJson(json.decode(str));
+LoginData dataFromJson(String str) => LoginData.fromJson(json.decode(str));
 
-String dataToJson(Data data) => json.encode(data.toJson());
+String dataToJson(LoginData data) => json.encode(data.toJson());
 
-class Data {
-  Data({
+class LoginData {
+  LoginData({
     this.id,
     this.accessToken,
     this.refreshToken,
@@ -25,7 +25,7 @@ class Data {
   DateTime createdAt;
   String userUuid;
 
-  factory Data.fromJson(Map<String, dynamic> json) => Data(
+  factory LoginData.fromJson(Map<String, dynamic> json) => LoginData(
     id: json["id"],
     accessToken: json["accessToken"],
     refreshToken: json["refreshToken"],
